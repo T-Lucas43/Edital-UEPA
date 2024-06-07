@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidade do Estado do Pará</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Hero Section */
+        .hero {
+            background-color: rgba(255, 255, 255, 0.5); /* Alterado para branco semi-transparente */
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+    </style>
+</head>
+<body class="light-theme">
+    <header>
+        <div class="top-bar">
+            <div class="contact-info">
+                <p>Email: contato@uepa.br | Telefone: (91) 1234-5678</p>
+            </div>
+            <div class="social-media">
+                <p>Conecte-se conosco</p>
+                <!-- Adicionar ícones de redes sociais aqui -->
+            </div>
+        </div>
+        <div class="header-main">
+            <img src="https://www2.uepa.br/prosel/wp-content/uploads/LOGO-UEPA-PROSEL.png" alt="Logo da Universidade do Estado do Pará" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="https://www.uepa.br/pt-br">Home</a></li>
+                    <li><a href="http://uepa.sites.homologar.prodepa.pa.gov.br/pt-br/pagina/centros-e-campi">Sobre</a></li>
+                    <li><a href="http://uepa.sites.homologar.prodepa.pa.gov.br/pt-br/content/atos-de-criacao">Instituição</a></li>
+                    <li><a href="https://prosel.uepa.br/">Vestibular</a></li>
+                    <li><a href="http://uepa.sites.homologar.prodepa.pa.gov.br/pt-br/agenda">Eventos</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Procurar...">
+                <button type="submit">Buscar</button>
+                <img src="https://www.uepa.br/themes/custom/mycustom_barrio/images/logo-sic.svg" alt="Logo SIC" style="margin-right: 10px;">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2 class="blue-text">Edital de Processo Seletivo Simplificado para a contratação temporária</h2>
+                <img src="https://www.agenciapara.com.br/midias/2021/grandes/up_ag_28322_c5efb4bb-13bc-4f2c-d848-d1333125d6fd.jpg" alt="Imagem de destaque" class="hero-image">
+                <h1>Bem-vindo à Universidade do Estado do Pará</h1>
+                
+                <button onclick="toggleConteudo()" style="background-color: #0077b6;">Saiba Mais</button>
+            </div>
+            <div id="conteudo-adicional" style="display: none;">
+                <section class="main-content">
+                    <h2>EDITAL Nº 061/ 2023-UEPA</h2>
+                    <p class="info-text">A Universidade do Estado do Pará – UEPA, torna pública a realização de Processo Seletivo Simplificado – PSS, para selecionar candidatos a fim de desempenhar funções temporárias de nível fundamental, médio e superior, com vencimentos de R$ 1.215,50 (hum mil, duzentos e quinze reais e cinquenta centavos) a R$ 2.653,22 (dois mil, seiscentos e cinquenta e três reais e vinte e dois centavos), para os campi da UEPA presentes nos municípios de Altamira, Ananindeua, Barcarena, Belém, Cametá, Castanhal, Igarapé-Açu, Marabá, Moju, Paragominas, Parauapebas, Redenção, Salvaterra, Santarém, São Miguel do Guamá e Tucuruí. As inscrições deverão ser solicitadas por meio eletrônico através do portal da Universidade (www.uepa.br), a partir das 08h00min do dia 03 de julho até às 23h59min do dia 04 de julho de 2023, sem taxa de inscrição.</p>
+                    <p>Incrições <a href="formulario.html">aqui.</a></p>
+                    <p>CLAY ANDERSON NUNES CHAGAS<br>Reitor da Universidade do Estado do Pará</p>
+                    <h3>Edital</h3>
+                    <p><a href="edital612023.pdf">EDITAL Nº 061/ 2023</a></p>
+                    <h3>Assunto</h3>
+                    <p>Edital de Processo Seletivo Simplificado para a contratação temporária.</p>
+                </section>
+            
+            </div>
+        </section>
+        <section class="highlights">
+            <div class="highlight">
+                <h2>Número de Vagas</h2>
+                <p>68 vagas</p>
+            </div>
+            <div class="highlight">
+                <h2>Início das inscrições</h2>
+                <p>03 de julho de 2023</p>
+            </div>
+            <div class="highlight">
+                <h2>Fim das incrições</h2>
+                <p>04 de julho de 2023</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Universidade do Estado do Pará - Todos os direitos reservados</p>
+        <p>Rua do Una, nº 156 - Telégrafo - Belém-Pará-Brasil | CEP: 66050-540</p>
+        <img src="https://www.uepa.br/themes/custom/mycustom_barrio/images/logo-uepa-branco.png" alt="Logo UEPA">
+    </footer>
+    <script>
+        var conteudoVisivel = false; // Adicionado para controlar a visibilidade do conteúdo
+
+        function toggleConteudo() {
+            var conteudo = document.getElementById("conteudo-adicional");
+            if (conteudoVisivel) {
+                conteudo.style.display = "none"; // Oculta o conteúdo se estiver visível
+                conteudoVisivel = false; // Atualiza a variável de controle
+            } else {
+                conteudo.style.display = "block"; // Exibe o conteúdo se estiver oculto
+                conteudo.style.color = "#0077b6";
+                conteudoVisivel = true; // Atualiza a variável de controle
+            }
+        }
+    </script>
+</body>
+</html>

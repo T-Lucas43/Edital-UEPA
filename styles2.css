@@ -1,0 +1,102 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://static.vecteezy.com/ti/fotos-gratis/p2/6929681-fundo-abstrato-bokeh-circulo-azul-claro-abstrato-azul-efeito-fundo-azul-claro-fundo-abstrato-gratis-foto.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #0077b6; /* Azul */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Branco semi-transparente */
+    border: 2px solid #d32f2f; /* Vermelho */
+    border-radius: 5px;
+}
+
+.logo-uepa {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #d32f2f; /* Vermelho */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #d32f2f; /* Vermelho */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #d32f2f; /* Vermelho */
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #0077b6; /* Azul */
+    color: #ffffff; /* Branco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #055c8b; /* Azul mais escuro */
+}
+
+.checkbox-label {
+    color: #d32f2f; /* Vermelho */
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #055c8b; /* Azul mais escuro */
+    color: #fff; /* Branco */
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Certifica-se de que o rodapé está acima de outros elementos */
+}
+
+footer img {
+    width: 100px;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}

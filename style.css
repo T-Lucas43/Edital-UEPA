@@ -1,0 +1,238 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://static.vecteezy.com/ti/fotos-gratis/p2/6929681-fundo-abstrato-bokeh-circulo-azul-claro-abstrato-azul-efeito-fundo-azul-claro-fundo-abstrato-gratis-foto.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #0077b6;
+    line-height: 1.6;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #055c8b;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.top-bar p {
+    margin: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #fcfcfc;
+    border-bottom: 4px solid #d32f2f;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 20%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #055c8b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.search-container button {
+    padding: 5px 10px;
+    background-color: #055c8b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #055c8b;
+}
+
+/* Hero Section */
+.hero {
+    background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo semi-transparente */
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-content button:hover {
+    background-color: #a62828;
+}
+
+/* Novo estilo para a imagem */
+.hero-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Highlights Section */
+.highlights {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.highlight {
+    text-align: center;
+    width: 30%;
+}
+
+.highlight h2 {
+    margin-bottom: 10px;
+    color: #d32f2f;
+}
+
+.highlight p {
+    color: #055c8b;
+}
+
+/* Main Content */
+main {
+    background-color: rgb(255, 255, 255); /* Adiciona um fundo semi-transparente */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.685);
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+h2#main-title {
+    color: #0077b6;
+}
+
+.dark-theme h2#main-title {
+    color: #fff;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #d32f2f;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #055c8b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+.blue-text {
+    color: #0077b6;
+}
+
+/* Adiciona cor vermelha para o texto após o botão "Saiba Mais" */
+#conteudo-adicional p {
+    color: rgb(0, 0, 0);
+}
+
+/* Para dispositivos móveis */
+@media screen and (max-width: 600px) {
+    .logo {
+        width: 30%; /* Ajusta o tamanho do logo para dispositivos móveis */
+    }
+
+    .top-bar {
+        flex-direction: column; /* Coloca as informações de contato e redes sociais em coluna */
+        align-items: center;
+    }
+
+    .contact-info,
+    .social-media {
+        margin-bottom: 10px; /* Adiciona um espaço entre as seções de contato e redes sociais */
+    }
+
+    .search-container {
+        flex-direction: column; /* Coloca a barra de busca em coluna */
+        align-items: center;
+    }
+
+    .search-container input[type="text"] {
+        width: 100%; /* Ajusta a largura do campo de busca para ocupar toda a largura disponível */
+        margin-bottom: 10px; /* Adiciona um espaço abaixo do campo de busca */
+    }
+
+    .highlight {
+        width: 100%; /* Ajusta a largura dos destaques para ocupar toda a largura */
+    }
+
+    .info-text {
+        font-size: 14px; /* Diminui o tamanho da fonte do texto */
+    }
+}
